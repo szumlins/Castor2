@@ -1,0 +1,110 @@
+=head2 Wed Aug 29 22:01:34 2012: C<Module> L<XML::SAX::Expat|XML::SAX::Expat>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/szumlins/perl5/lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.40>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Aug 29 22:01:46 2012: C<Module> L<XML::Simple|XML::Simple>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/szumlins/perl5/lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.20>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Aug 29 22:02:29 2012: C<Module> L<Data::Dumper|Data::Dumper>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/szumlins/perl5/lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.131>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Aug 29 22:03:29 2012: C<Module> L<Text::CSV|Text::CSV>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/szumlins/perl5/lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.21>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Wed Aug 29 22:05:34 2012: C<Module> L<Sys::Syslog|Sys::Syslog>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/szumlins/perl5/lib>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.31>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
