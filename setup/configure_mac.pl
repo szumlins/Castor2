@@ -523,6 +523,11 @@ sub write_launchd{
 sub validate{
 
 	if($_[0] eq "y"){
+		`/bin/mkdir -p "$root/queues"`;
+		`/bin/mkdir -p "$root/conf"`;		
+		`/bin/mkdir -p "$root/tmp"`;
+		`/bin/mkdir -p "$root/logs/job_logs"`;		
+		`/bin/mkdir -p "$root/logs/update_logs"`;	
 		`"$cdbin" bubble --timeout 1 --title "Castor Info" --x-placement center --y-placement center --text "Writing aw-queue.conf file"`;
 		write_awconf();
 		`"$cdbin" bubble --timeout 1 --title "Castor Info" --x-placement center --y-placement center --text "Writing catdv.conf file"`;		
