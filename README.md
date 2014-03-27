@@ -1,21 +1,32 @@
-Release notes
+Copyright (c) 2014 Provideotech.org										 
+                                                                           
+Castor - PresSTORE/CatDV integration                                      
+                                                                           
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS   
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF                
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN 
+NO EVENT SHALL THE ABOVE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,       
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR     
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
+USE OR OTHER DEALINGS IN THE SOFTWARE.                                    
+                                                                          
+Except as contained in this notice, the name(s) of the above copyright    
+holders shall not be used in advertising or otherwise to promote the      
+sale, use or other dealings in this Software without prior written        
+authorization.                                                            
 
-2/14/2014
----------
--Fixed bug in record-update method where lookups failed when multiple files with same naming
- convention are archived in the same batch
- 
--Moved field mapping for barcode/label/volume/handle into the catdv.conf file, editing of 
- record-update.pl no longer needed
- 
--Changed the way archive queues work when using CatDV.  Unique CatDV ID is now added to archive
- queue by using <<CDVID>> separator in Worker Node
- 
--Created rich logs for record updates in addition to jobs to track metadata sendback independent 
- of actual archive task
+This software is used to connect Archiware PresSTORE to Squarebox CatDV.  It
+allows for CatDV full res media to be stored and recovered using the Archiware
+PresSTORE product.
 
+Release Notes 
+--------------------
+//3-26-2014
+Added new git repository for Castor v2.  New features since v1.0:
 
-3/23/2012
----------
--Added release notes to package
--Updated catdv-xml.pl to support Windows paths stored on server in Mac worker node environment.
+-Metadata send back to CatDV
+-More robust support for xml import in CatDV environments with multiple entries of the same file type
+-Everything can now run in user land, no need for admin rights
+-Added GUI installer for Mac (must be run on P5 machine)
+-Full support for latest Archiware/CatDV (P5.1.1 and CatDV 10.0.9 as of this update)
+-Lots of little bug fixes
