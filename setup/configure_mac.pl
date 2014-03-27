@@ -543,7 +543,7 @@ sub validate{
 		`/bin/chmod 777 "$root/queues/restore-queue.txt"`;
 		`/bin/chmod 775 "$root/logs/aw-queue.log"`;
 		`/bin/chmod 775 "$root/logs/aw-queue-err.log"`;		
-		if(-ne "$root/lib"){
+		unless(-e "$root/lib"){
 			`/usr/bin/unzip/ "$root/lib.zip"`;
 		}
 		$finish = "You will now need to edit $root/conf/metadata.conf by hand to complete the install\n\n";
