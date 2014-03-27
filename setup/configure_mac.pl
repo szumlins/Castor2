@@ -371,15 +371,6 @@ sub write_awconf{
 	print AWCONF "# Where is the catdv CLI application (can be left blank if $usecatdv is set to \"no\")\n";
 	print AWCONF "\n";
 	print AWCONF "\$catdv = \"$result{'catdvbin'}\"\;\n";	
-	print AWCONF "\n";
-	print AWCONF "# Maps to user fields in CatDV.  Should be standard CatDV field names or \"Ux\"\n";
-	print AWCONF "\n";	
-	print AWCONF "\$cdv_handle_map = \"$result{'cdv_handle'}\"\;\n";		
-	print AWCONF "\$cdv_label_map = \"$result{'cdv_label'}\"\;\n";	
-	print AWCONF "\$cdv_volume_map = \"$result{'cdv_volume'}\"\;\n";
-	print AWCONF "\$cdv_barcode_map = \"$result{'cdv_barcode'}\"\;\n";						
-	print AWCONF "\$cdv_arch_status_map = \"$result{'cdv_arch_sts'}\"\;\n";							
-
 
 	close AWCONF;
 }
@@ -405,6 +396,14 @@ sub write_catdvconf{
 	print CDVCONF "# Temporary preview location\n";		
 	print CDVCONF "\n";
 	print CDVCONF "\$awproxypath = \"$result{'awproxypath'}\"\;\n";	
+	print CDVCONF "# Maps to user fields in CatDV.  Should be standard CatDV field names or \"Ux\"\n";
+	print CDVCONF "\n";	
+	print CDVCONF "\$cdv_handle_map = \"$result{'cdv_handle'}\"\;\n";		
+	print CDVCONF "\$cdv_label_map = \"$result{'cdv_label'}\"\;\n";	
+	print CDVCONF "\$cdv_volume_map = \"$result{'cdv_volume'}\"\;\n";
+	print CDVCONF "\$cdv_barcode_map = \"$result{'cdv_barcode'}\"\;\n";						
+	print CDVCONF "\$cdv_arch_status_map = \"$result{'cdv_arch_sts'}\"\;\n";							
+	
 
 	close CDVCONF;
 }
