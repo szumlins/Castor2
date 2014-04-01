@@ -192,7 +192,7 @@ while (<CSV>){
 		$tapecdv = join(",",@tapes);
 		print LOGFILE localtime(time)." Volumes(s): $tapecdv\n";
 		#syslog('err',"Volume(s): $tapecdv");		
-		$result = `su $username -c "\\\"$catdv\\\" -clipid $columns[2] -set $cdv_handle_map=\\\"$tapecdv\\\""`;
+		$result = `su $username -c "\\\"$catdv\\\" -clipid $columns[2] -set $cdv_volume_map=\\\"$tapecdv\\\""`;
 		$result =~ s/\n//g;				
 		print LOGFILE localtime(time)." CatDV output: $result\n";		
 		#syslog('err',"$result");
